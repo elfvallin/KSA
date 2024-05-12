@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KSA.TECH.HUB</title>
+    <div>
+        <link rel="stylesheet" href="home1.css">
+    </div>
+</head>
+<body>
+    
+    <div style="background-color: black;">
+        <div class="navbar">
+            <h1 class="head" >KSA.TECH.HUB</h1>
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+         <div class="navbar-links">
+            <ul>
+                <li> <a href="home1.html">Home </a></li>
+                <li> <a href="contact.html">Contact</a></li>
+                <li> <a href="service.html">Service</a></li>
+                <!-- <li> <a href="">Portfolio</a></li> -->
+                <li> <a href="work with us.html">WorkWithUs</a></li>
+            </ul>
+          </div>
+        </div>
+    </div>
+        <div class="work">
+            <div class="ksa">
+                <h2>Hello,Welcome</h2>
+            </div>
+            <div class="com">
+                <h2>KSA TECH HUB</h2>
+            </div>
+            <DIV class="hub">
+                <p>KSA Tech Hub stands as a becon of <br>
+                    innovation and excellence in the <br>
+                    African software industry, recognized <br>
+                    as the premier software company on <br>
+                    the continent
+                </p>
+            </DIV>
+            <a href=""><button class="button-c">Learn More </button></a>
+        </div>
+        
+        <script>
+            const toggleButton = document.getElementsByClassName('toggle-button')[0]
+            const navbarlinks = document.getElementsByClassName('navbar-links')[0]
+    
+            toggleButton.addEventListener('click', () => {
+                navbarlinks.classList.toggle('active')
+            })
+        </script>
+    </body>
+    </html>

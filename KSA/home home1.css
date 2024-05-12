@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.85),rgba(0,0,0,0.85)),url(HUB.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.navbar{
+    display: flex;
+    width:85% ;
+    margin: auto;
+    /* list-style: none; */
+    padding: 35px 0;
+    align-items: center;
+    justify-content: space-between;
+     word-spacing: 3px; 
+     /* background-color: rgba(153, 113, 60, 0.144) ; */
+} 
+.head{
+    width: 170px;
+    cursor: pointer;
+    color: aliceblue;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20pxs;
+    position: relative;
+}.navbar ul li a{
+    text-decoration: none;
+    color:white ;
+    /* font-family: Arial, Helvetica, sans-serif; */
+}
+.navbar ul li::after{
+    content:'' ;
+    height:3px ;
+    width: 0;
+    background: #ffc108;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 50px;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 60%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: white;
+}
+.title{
+    font-size: 30px;
+    line-height: 100px;
+    /* font-weight:bold ; */
+    height: 50px; 
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.content p {
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+     font-family:sans-serif ;
+}
+button{
+    padding: 15px 25px;
+    margin: 20px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    border: 2px solid #ffc108;
+    color: #fff;
+    cursor: pointer;
+    background: linear-gradient(to right, transparent 50%, #ffc108 50%);
+    background-size: 200%;
+    background-position: left;
+    transition:background-position 0.5s ;
+}
+button:hover{
+    background-position: right;
+    color: #000;
+}
+.slider{
+    color: #ffc108;
+    margin: 12px;
+    box-sizing: border-box;
+    animation: slider 10s linear infinite
+}
+@keyframes slider {
+    /* 0%{ margin-top: -100px;}
+    10%{ margin-top: -100px;} */
+    0%{ margin-top: -400px;}
+    5%{ margin-top: -200px;}
+    30%{ margin-top: -200px;}
+    /* 40%{ margin-top: 0px;}
+    50%{ margin-top: 0px;} */
+    35%{ margin-top: 0px;}
+    65%{ margin-top: 0px;}
+    70%{ margin-top: 200px;}
+    100%{ margin-top: 200px;}
+    
+}
+/* contact */
+.product{
+    /* border: 2px solid black; */
+    width: 100px;
+    margin: 10px;
+    padding: 10px;
+      display:table;
+      padding-left:30% ;
+      
+   }
+   
+   .normal{
+    display: flex;
+    flex-wrap: nowrap;
+    
+  } 
+  .wrapp{
+    text-align: center;
+    font-size: 17;
+    /* register......................... */
+  }
+  .form-box{
+    background-color: azure;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    height: 420px;
+    overflow: hidden;
+    z-index: 2;
+    color: #000;
+    padding-left:38%;
+    
+  }
+  .register-container{
+    width: 500px;
+    flex-direction: column;
+    transition: 5s ease-in-out;
+  }
+  .top span{
+    color: #1a0404;
+    margin-left: 10px; 
+
+  }
+  .top span a{
+    font-weight: 500;
+    color: #0e0101;
+    margin-left: 20px;
+  }
+  .header{
+    color: #1a0404;
+    font-size: 30px;
+    text-align: center;
+    /* padding:10px 0 30px 0 ; */
+  }
+  .two-forms{
+    display: flex;
+    gap: 120px;
+  }
+  .input-field{
+    font-size: 15px;
+    background: #eed485;
+    color: #000;
+    height: 40px;
+    width: 150px;
+    padding: 0 10px 0 40px;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    transition: 2s ease;
+  }
+  .input-field:hover, .input-field:focus{
+    background: #eebdbd;
+  }
+  ::-webkit-input-placeholder{
+    color: #0e0101;
+  }
+  .input-box{
+    position: relative;
+    top: 10px;
+    left: 17px;
+    color: #000;
+    height: 60px;
+    width: 100px;
+  }
+  .submit{
+    font-size: 15px;
+    font-weight: 5000px;
+    color: #000;
+    height:45px ;
+    width: 100px;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    background: #eebdbd;
+cursor: pointer;
+transition: 3s ease-in-out
+  }
+.submit:hover {
+     background: #eebdbd;
+     box-shadow: 1px 5px 7px 1px #0e0101;
+
+}
+ 

@@ -1,0 +1,14 @@
+.header nav{
+    display: flex;
+    /* background-color:grey; */
+    gap: 4rem;
+    padding-left: 0rem;
+ }
+
+ .header nav ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1rem;
+ }

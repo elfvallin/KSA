@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KSA.TECH.HUB</title>
+    <div>
+        <link rel="stylesheet" href="home1.css">
+    </div>
+</head>
+<body>
+    
+    <div style="background-color: rgb(10, 10, 10);">
+        <div class="navbar">
+            <h1 class="head" >KSA.TECH.HUB</h1>
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+         <div class="navbar-links">
+            <ul>
+                <li> <a href="home1.html">Home </a></li>
+                <li> <a href="contact.html">Contact</a></li>
+                <li> <a href="service.html">Service</a></li>
+                <!-- <li> <a href="">Portfolio</a></li> -->
+                <li> <a href="work with us.html">WorkWithUs</a></li>
+            </ul>
+          </div>
+        </div>
+    </div>
+    <!-- /////////sign in form -->
+    <div class="form">
+        <div class="login">
+            <span>Have an account? <a href="login.html" onclick="login()">Login</a></span>
+            <header>Sign up</header>
+        </div>
+        <form onsubmit="sendEmail(); resest();return false">
+        <div class="input">
+            <input type="text" class="input-field" id="Firstname" placeholder="Firstname">
+           
+        </div>
+        <div class="input">
+            <input type="text" class="input-field" id="Lastname" placeholder="Lastname">
+           
+        </div>
+        <div class="input"> 
+            <input type="text" class="input-field" id="Email" placeholder="Email">
+       
+       </div class="input">
+       <div>
+        <input type="text" class="input-field" id="PassWord" placeholder="PassWord">
+       
+      </div >
+      <div class="input">
+       <button class="button-c" id="Register">Register</button>
+      </div>
+    </form>
+      <div class="input">
+        <input type="checkbox" id="register-check">
+        <label for="register-check">Remember Me</label>
+      </div>
+      <div class="input">
+        <label ><a href="">Terms & Conditions</a></label>
+      </div>
+    
+   <!-- ////////////login form -->
+   <!-- <div>
+     <div class="login">
+      <span>Dont have account? <a href="register1.html" onclick="Sign()">Sign In</a></span>
+      <header>Login In</header>
+     </div>
+     <div>
+        <div class="input">
+          <input type="text" class="input-field" placeholder="Email or UserName">
+          
+        </div>
+        <div class="input">
+            <input type="text" class="input-field" placeholder="Password">
+        </div>
+         </div>
+        <div class="input">
+         <button class="button-c">Login</button>
+        </div>
+        <div class="input">
+          <label ><a href="">Forgot password ??</a></label>
+        </div>
+     </div>
+    </div> -->
+
+      
+    </div>
+    <script>
+        const toggleButton = document.getElementsByClassName('toggle-button')[0]
+        const navbarlinks = document.getElementsByClassName('navbar-links')[0]
+
+        toggleButton.addEventListener('click', () => {
+            navbarlinks.classList.toggle('active')
+        })
+    </script>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function Register(){
+              Email.send({
+        Host : "smtp.gmail.com",
+        Username : "boyjam005@gmail.com",
+        Password : "he11we11",
+        To : 'boyjam005@gmail.com',
+        From : document.getElementById("Email").value,
+        Subject : "New Contact Form Enquiry",
+         Body : "Firstname: " + document.getElementById("Firstname").value
+         +"Lastname: " +document.getElementById("Lastname").value
+         +"Email: " +document.getElementById("Email").value
+
+     }).then(
+        message => alert("Succesfully Registered")
+     );
+        }
+    </script>
+
+
+</body>
+</html>
